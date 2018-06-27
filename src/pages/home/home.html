@@ -7,8 +7,27 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+ <form [formGroup] = "formgroup">
+ <ion-list>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text"  #username class="form-control" formControlName="username"></ion-input>
+  </ion-item>
+ <ion-item *ngIf = "formgroup.controls['username'].errors && formgroup.controls['username'].touched ">
+    <p> *username is required</p>
+  </ion-item> 
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password"  #password class="form-control" formControlName="pwd" ></ion-input>
+  </ion-item>
+ <ion-item *ngIf = "formgroup.controls['pwd'].errors && formgroup.controls['pwd'].touched">
+    <p> *password is required</p>
+  </ion-item> 
+</ion-list>
+
+<div padding>
+  <button block ion-button (click)="signIn()">Log In</button>
+</div>
+ </form> 
 </ion-content>
