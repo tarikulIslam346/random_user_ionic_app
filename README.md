@@ -13,8 +13,9 @@ if(this.uname.value == 'user'&& this.password.value == 'user')
   	}
 ````
 -  Random user API call
-
-## https://randomuser.me/api/
+```
+  https://randomuser.me/api/
+  ```
 
 -  Spinner loader
     
