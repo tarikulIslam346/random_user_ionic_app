@@ -1,4 +1,4 @@
-# random_user_ionic_app
+# Random  user ionic app
 
 ## Ionic 3 angular 5 base app
 
