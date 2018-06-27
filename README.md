@@ -1,5 +1,7 @@
 # random_user_ionic_app
 
+## Ionic 3 angular 5 base app
+
 # Feature 
 
 - Authenication (not secure way)
@@ -11,9 +13,9 @@ if(this.uname.value == 'user'&& this.password.value == 'user')
   	}
 ````
 -  Random user API call
-````
-https://randomuser.me/api/
-````
+
+## https://randomuser.me/api/
+
 -  Spinner loader
     
 ````
